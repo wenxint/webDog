@@ -1,0 +1,19 @@
+{
+  "name": "pet-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "宠物社区 + 养宠百科后端 API（Express + Node 内置 node:sqlite）",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

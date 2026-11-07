@@ -1,0 +1,21 @@
+{
+  "name": "pet-community",
+  "version": "0.1.0",
+  "private": true,
+  "description": "宠物社区 + 养宠百科（首版 MVP）",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm --workspace apps/api run dev",
+    "dev:web": "npm --workspace apps/web run dev",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
